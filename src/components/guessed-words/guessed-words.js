@@ -1,7 +1,9 @@
 import React from 'react';
 
 import guessedWordsContext from '../../contexts/guessed-words-context';
-import  { useLangStrings } from '../../contexts/language-context';
+import { useLangStrings } from '../../contexts/language-context';
+
+import './guessed-words.css';
 
 const GuessedWords = () => {
   const langStrings = useLangStrings();
@@ -37,10 +39,14 @@ const GuessedWords = () => {
             <th>{langStrings.inPlaceLettersColumnHeader}</th>
           </tr>
           </thead>
-          <tbody>
-          {guessedWordsRows}
-          </tbody>
         </table>
+        <div className="table-wrapper-scroll-y">
+          <table className="table table-striped table-sm">
+            <tbody>
+            {guessedWordsRows}
+            </tbody>
+          </table>
+        </div>
       </div>
     );
   }

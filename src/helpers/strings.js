@@ -19,7 +19,7 @@ const languageStrings = {
     dictionaries: {
       kid: 'Kid',
       adult: 'Adult',
-      professor: 'Professor',
+      professor: 'Prof',
     },
     wordLengths: {
       4: '4 letters',
@@ -54,14 +54,18 @@ const languageStrings = {
         <ul class="level-info">
             <li><strong>Kid:</strong> Average dictionary of kid 4-7 years old </li>
             <li><strong>Adult:</strong> Average dictionary of adult person </li>
-            <li><strong>Professor:</strong> Rarely used words</li>
+            <li><strong>Prof:</strong> Rarely used words</li>
         </ul>`
+      },
+      wordLengthInfo: {
+        title: 'Word Length selection',
+        content: `<p>Select the length of the secret word. Your guess attempts should be the same length.</p>`
       },
       labels: {
         language: 'Language',
         level: 'Level',
         dictionary: 'Dictionary',
-        wordLength: 'Word',
+        wordLength: 'Secret',
       },
     },
     navStrings: {
@@ -78,7 +82,7 @@ const languageStrings = {
   ru: {
     symbol: 'Русский',
     flag: 'ru',
-    name: 'Угадай слово',
+    name: 'Игра "Угадай-ка"',
     congrats: 'Поздравляем! Вы угадали слово!',
     submit: 'Отправить',
     guessPrompt: 'Попробуй угадать секретное слово!',
@@ -95,7 +99,7 @@ const languageStrings = {
     dictionaries: {
       kid: 'Ребенок',
       adult: 'Взрослый',
-      professor: 'Профессор',
+      professor: 'Профи',
     },
     wordLengths: {
       4: '4 буквы',
@@ -132,11 +136,15 @@ const languageStrings = {
               <li><strong>Профессор:</strong> Редко используемые слова</li>
           </ul>`
       },
+      wordLengthInfo: {
+        title: 'Количество букв в секретном слове',
+        content: `<p>В процессе игры также будут принимться слова только такой длины</p>`
+      },
       labels: {
         language: 'Язык',
         level: 'Уровень',
         dictionary: 'Словарь',
-        wordLength: 'Слово'
+        wordLength: 'Секрет'
       },
     },
     navStrings: {

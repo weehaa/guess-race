@@ -1,6 +1,10 @@
 $color: #003366;
-$btn-background: #6699CC;
+$btn-background: #f0f0f0;
 $btn-width: 180px;
+
+.menu-nav-link {
+  background: rgba(255,255,255,0.2);
+}
 
 .menu-list {
   margin: 0 auto;
@@ -23,8 +27,8 @@ $btn-width: 180px;
   text-align: left;
 }
 
-.menu-item:first-child{
-  width: 200px;
+.menu-item {
+  min-width: 180px;
 }
 
 .menu-label, .menu-hint {
@@ -33,8 +37,8 @@ $btn-width: 180px;
 
 .tooltip-button {
   padding: 3px 12px;
-  background-color: #FFFFFF;
-  border: 2px solid $color;
+  background-color: $btn-background;
+  border: 1px solid $color;
   font-weight: bold;
   color: $color;
   text-align: center;
@@ -45,14 +49,20 @@ $btn-width: 180px;
 
 .menu-label {
   font-size: 16px;
-  font-weight: bold;
-  color: $color;
+  //font-weight: bold;
+  color: #ededed;
 }
 
 .level-info {
   padding: 0 5px;
   width: 220px;
   list-style: none;
+}
+
+.dropdown-toggle.btn:focus,
+.dropdown-toggle.btn:active {
+  border: none;
+  box-shadow: none;
 }
 
 
@@ -62,6 +72,7 @@ $btn-width: 180px;
   padding: 0.7rem;
   width: 100%;
   color: black;
+  border: none;
   background: $btn-background;
 }
 

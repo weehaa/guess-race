@@ -25,14 +25,14 @@ const NavbarMenu = () => {
       activeClassName = "active-link"
       className="px-2 menu-nav-link"
     >
-      <img width="32px" height="32px" src={icon} alt={name} className="my-2"/>
+      <img width="32px" height="32px" src={icon} alt={name} className="my-1"/>
       <span className="ml-2 text-body text-decoration-none">{navStrings[name]}</span>
     </NavLink>
   );
 
   return (
     <nav
-      className="d-flex justify-content-between align-middle text-capitalize"
+      className="nav-main d-flex justify-content-between align-middle text-capitalize"
       data-test="component-navbar-menu"
     >
       {navItems}

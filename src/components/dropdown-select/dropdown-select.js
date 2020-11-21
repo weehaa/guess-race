@@ -55,7 +55,7 @@ const DropdownSelect = ({ items, selectedItemIdx, onSelect }) => {
   );
 
   return (
-    // renderMenuOnMount for testing!
+    // renderMenuOnMount is for testing purposes!
     <DropdownButton
       title={<ItemView name={selectedName} image={selectedImage} />}
       size="lg"

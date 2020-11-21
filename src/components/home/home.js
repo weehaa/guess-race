@@ -32,7 +32,7 @@ const Home = ({level, setLevel, dictionary, setDictionary, wordLength, setWordLe
     {
       label: 'wordLength',
       menuItem: <WordLengthPicker wordLength={wordLength} setWordLength={setWordLength} />,
-      hint: 'dictionaryInfo'
+      hint: 'wordLengthInfo'
     }
   ];
 

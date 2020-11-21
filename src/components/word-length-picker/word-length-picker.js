@@ -7,7 +7,7 @@ import getStringByLanguage from '../../helpers/strings';
 import DropdownSelect from '../dropdown-select';
 
 /**
- * @function component for word length selection
+ * @function component for word length selection via dropdown
  * @param wordLength
  * @param {function} setWordLength - setWordLength method from ancestors
  * @returns {JSX.Element}

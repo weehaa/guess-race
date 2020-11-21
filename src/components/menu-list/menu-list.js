@@ -8,15 +8,16 @@ import { useLangStrings } from '../../contexts/language-context';
 import './menu-row.scss';
 
 /**
- *
+ * Renders label, dropdown and hint in a row
  * @param {string} label
  * @param {JSX.Element} menuItem
  * @param {string} hint
  * @returns {JSX.Element}
- * @constructor
  */
 const MenuRow = ({ label, menuItem, hint }) => {
   const menuStrings = useLangStrings()['menuStrings'];
+
+  // renders `i` button to show popup info on click
   const renderHint = () => {
     if (!menuStrings[hint]) return null;
     return (

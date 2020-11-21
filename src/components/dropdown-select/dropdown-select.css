@@ -1,4 +1,22 @@
+.dropdown-menu {
+    padding: 0;
+    width: 100%;
+}
+
+
+
 .dropdown-text {
     padding: 0 10px;
     margin: 0 auto;
+    line-height: 28px;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: #607D8B;
+}
+
+.show>.btn-primary.dropdown-toggle {
+    color: #000;
 }
